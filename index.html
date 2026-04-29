@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shem Jahzeel Guilllem Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2 class="logo">SG</h2>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-content">
+
+    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+
+    <h1><span id="typing"></span></h1>
+    <p>I’m Shem Jahzeel Guillem, an Information Technology student at Central Philippine University in Iloilo City. I have a strong passion for technology and enjoy exploring how digital tools can solve real-world problems. </p>
+
+    <!-- SOCIAL ICONS -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/shem-jahzeel-guillem-79b9b5406/" target="_blank" class="icon-btn">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+
+      <a href="https://github.com/zayxkyou" target="_blank" class="icon-btn">
+        <img src="github.png" alt="GitHub">
+      </a>
+    </div>
+
+    <div class="hero-buttons">
+      <button onclick="scrollToSection('projects')">Projects</button>
+      <button class="outline" onclick="scrollToSection('contact')">Contact</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- GROCERY APP -->
+    <div class="project-card">
+      <div class="card-inner">
+        <h3>🛒 Grocery App</h3>
+        <p><strong>Tech:</strong> Flutter + Firebase</p>
+
+        <p><strong>Problem:</strong><br>
+        Users often forget grocery items and have no real-time way to sync lists across devices.</p>
+
+        <p><strong>Solution:</strong><br>
+        Built a Flutter app connected to Firebase Realtime Database that allows instant add/remove syncing across devices.</p>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="project-card">
+      <div class="card-inner">
+        <h3>🌐 Portfolio Website</h3>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript, Cloudflare</p>
+
+        <p><strong>Problem:</strong><br>
+        Developers lack a professional way to showcase skills beyond static resumes.</p>
+
+        <p><strong>Solution:</strong><br>
+        Created a responsive, animated portfolio deployed on Cloudflare Pages to present projects and skills professionally.</p>
+      </div>
+    </div>
+
+    <!-- SQL SYSTEM -->
+    <div class="project-card">
+      <div class="card-inner">
+        <h3>💾 SQL System</h3>
+        <p><strong>Tech:</strong> SQL</p>
+
+        <p><strong>Problem:</strong><br>
+        Managing structured data manually leads to inefficiency, duplication, and slow retrieval.</p>
+
+        <p><strong>Solution:</strong><br>
+        Designed a relational database using SQL with optimized tables, relationships, and queries for efficient data handling.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="resume">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>HTML / CSS</p>
+    <div class="bar"><span style="width: 90%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>Flutter</p>
+    <div class="bar"><span style="width: 85%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>Firebase</p>
+    <div class="bar"><span style="width: 80%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>SQL</p>
+    <div class="bar"><span style="width: 75%"></span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="contact-card">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="status"></p>
+
+    <p class="linkedin">
+      LinkedIn: https://www.linkedin.com/in/shem-jahzeel-guillem-79b9b5406/
+    </p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
